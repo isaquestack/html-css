@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desáfio da imagem flexível</title>
+</head>
+<body>
+    <h1>CURSO DE HTML5 + CSS3</h1>
+    <h1>Desáfio da imagem flexível</h1>
+    <p>Esta imagem é flexivel! Tente visualiza-la em telas grandes e em telas pequenas.Quanto maior a tela,mais ampla é a paisagem</p>
+    <picture>
+        <source media="(min-width: 1220px)" srcset="imagens/paisagem-g.png" sizes="image/png">
+        <source media="(min-width: 760px)" srcset="imagens/paisagem-m.png" sizes="image/png">
+        <img src="imagens/paisagem-p.png" alt="imagegem-pequena">
+    </picture>
+    <p>Desenvolvido por Isaque Rocha Ribeiro</p>
+    <a href="https://github.com/isaquerocharibeiro" target="_blank">GitHub</a>
+</body>
+</html>
