@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        body{
+            font-family: 'Work Sans',Arial, Helvetica, sans-serif;
+            /* Medidas absolutas
+            cm, mm, pt, px, pc, in
+            ---------//--------
+            Medidas relativas 
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            */
+            font-size: 1em;
+            font-weight:normal;
+            font-style: italic;
+            text-decoration: underline;
+        }
+        h1{
+            /*
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            shorthand font 
+            -font style -> font weight -> font size -> font-family */
+            font: italic bolder 3em  'Work Sans', sans-serif;
+        }
+        h2{
+            font: bold 2em 'Work Sans',sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur harum quisquam iure possimus. Sed, voluptates molestiae! Assumenda minima rerum enim in officiis est, consectetur quod repudiandae, accusantium libero voluptate quis? Lorem, ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellendus culpa dolorem facilis ab adipisci totam similique explicabo, recusandae delectus fugiat minus debitis ex consequuntur iusto voluptatem accusantium commodi porro itaque dolor quo quos repellat voluptatum harum. Ea aliquid, et inventore, ipsam veritatis totam velit quia reiciendis, iure numquam dolorum excepturi quas rerum harum deserunt id. Rerum omnis sed minus.</p>
+    <h2>Subtitulo de exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, ullam neque quasi, repudiandae dolore autem illum fuga cumque at quae dolorum accusamus nisi modi quas consectetur, ipsa voluptatum minus delectus. Est recusandae quidem laudantium doloremque unde perspiciatis repellendus minus quisquam ipsa rem, earum quas molestias odit consectetur delectus, expedita quo itaque? Praesentium error excepturi perspiciatis ad! Suscipit commodi ducimus qui nam iure rem tempora molestias aspernatur excepturi inventore nostrum soluta reprehenderit totam deserunt, architecto ipsum quo labore aliquam nihil voluptatibus.</p>
+</body>
+</html>

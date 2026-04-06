@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/* todas as demais midias */
+
+/* 
+    Typical Devide Breakpoints
+    ------------------------------
+    Pequenas telas: até 600px
+    Celular: de 600px até 768px
+    Tablet: de 768ox até 992px
+    Desktop: de 992px até 1200px
+    Grandes telas: acima de 1200px
+*/
+
+@media print { /* Impressoras */
+
+    *{
+     font-family: 'Courier New', Courier, monospace;
+    }
+     body{
+        background-image: url(../imagens/back-print.jpg);/* desnecessário */
+     }
+
+     main{
+        border: 2px solid black;
+        width: 90vw;
+     }
+
+     main::after{
+        content: 'Essa impressão foi feita través do site www.cursoemvido.com';
+        font-size: 1.3rem;
+        text-decoration:overline;
+     }
+
+     main h1{
+        font-size: 2rem;
+        text-shadow: none;
+        color: black;
+     }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+    img#print{display: block;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    h1{
+        font-size: 1.7rem;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+    img#print{display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){ /* Desktop */
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    h1{
+        font-size: 1.6rem;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+    img#print{display: none;}
+}
+
+@media screen and (min-width: 1200px) { /* Telas grandes */
+
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    
+    h1{
+        font-size: 1.7rem;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+    img#print{display: none;}
+    
+}

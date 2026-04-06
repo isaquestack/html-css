@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalizando um link</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            font-weight: bold;
+            text-decoration: none;
+            color: red;
+        }
+
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        .especial:hover{
+            color: white;
+            background-color: black;
+            text-decoration: none;
+        }
+
+        .especial::before{
+            content:'\2192';
+            font-weight: lighter;
+        }
+        .especial::after{
+            content: '\2190';
+            font-weight: lighter;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando um link</h1>
+    <p>
+        Para aprender HTML5 e CSS3, acesse o link aseguir
+        <a href="https://gustavoguanbara.github.io" target="_blank" rel="external"> https://gustavoguanbara.github.io</a>
+    </p>
+    <p>
+        Se quiser conhecer mais sobre os padrões, visite esse site <a href="https://www.w3c.br" target="_blank" rel="external"> https://www.w3c.br</a>
+    </p>
+    <p>
+        Para acompanhar os cursos, acesse esse link <a href="https://www.youtube.com/cursoemvideo/" target="_blank" rel="external" class="especial"> https://www.youtube.com/cursoemvideo/</a>
+    </p>
+</body>
+</html>
