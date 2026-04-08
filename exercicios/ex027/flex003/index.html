@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexible Box</title>
+    <title>flexible box</title>
     <style>
-        .conteiner{
+        div.conteiner {
             background-color: lightsalmon;
-            height: 100px;
-            display: flex;
-            flex-flow: column wrap-reverse;
-        }
 
-        .item{
-            background-color: lightskyblue;
+            display: flex;
+           /*
+            flex-flow: row;
+            flex-wrap: nowrap;
+            ou shorthand
+            */
+            flex-flow: row wrap;
+        }
+        div.item {
+            background-color: aqua;
             border: 1px solid black;
             text-align: center;
             flex: auto;
@@ -29,6 +33,7 @@
         <div class="item">Exemplo de bloco E</div>
         <div class="item">Exemplo de bloco F</div>
         <div class="item">Exemplo de bloco G</div>
+
     </div>
 </body>
 </html>
