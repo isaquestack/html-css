@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/exercicios/ex023/tabela-04.html"
+    "livePreview.defaultPreviewPath": "/exercicios/ex023/tabela-04.html",
+    "liveServer.settings.port": 5501
 }
